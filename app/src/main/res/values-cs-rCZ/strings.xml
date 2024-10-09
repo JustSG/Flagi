@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Vlajky</string>
+    <string name="polecenie">Které barvy se neobjevují na polské vlajce?</string>
+    <string name="podpowiedz">Toto je barva polské vlajky</string>
+    <string name="podsumowanie">Toto je vlajka Polska</string>
 </resources>
