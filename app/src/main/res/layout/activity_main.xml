@@ -10,13 +10,14 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textViewPolecenie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:layout_margin="20dp"
         android:textAlignment="center"
         android:textColor="#215273"
-        android:text="Które kolory nie występują we fladze Polski?" />
+        android:text="@string/polecenie" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -28,9 +29,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#BA5656"
+            android:backgroundTint="#E3E3E3"
+            android:textColor="@color/black"
             android:layout_margin="10dp"
-            android:text="Czerwony" />
+            android:onClick="zlaOdpowiedz"
+            android:text="Biały" />
 
         <Button
             android:id="@+id/button8"
@@ -39,6 +42,7 @@
             android:layout_weight="1"
             android:backgroundTint="#53AF43"
             android:layout_margin="10dp"
+            android:onClick="dobraOdpowiedz"
             android:text="Zielony" />
 
         <Button
@@ -48,6 +52,7 @@
             android:layout_weight="1"
             android:backgroundTint="#213465"
             android:layout_margin="10dp"
+            android:onClick="dobraOdpowiedz"
             android:text="Niebieski" />
     </LinearLayout>
 
@@ -63,6 +68,7 @@
             android:layout_weight="1"
             android:backgroundTint="#7E4AB3"
             android:layout_margin="10dp"
+            android:onClick="dobraOdpowiedz"
             android:text="Fioletowy" />
 
         <Button
@@ -72,6 +78,7 @@
             android:layout_weight="1"
             android:backgroundTint="#5E5E5E"
             android:layout_margin="10dp"
+            android:onClick="dobraOdpowiedz"
             android:text="Szary" />
 
         <Button
@@ -79,10 +86,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="#E3E3E3"
-            android:textColor="@color/black"
+            android:backgroundTint="#BA5656"
             android:layout_margin="10dp"
-            android:text="Biały" />
+            android:onClick="zlaOdpowiedz"
+            android:text="Czerwony" />
     </LinearLayout>
 
 </LinearLayout>
